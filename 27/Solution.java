@@ -8,6 +8,7 @@ class Solution {
            if(nums[i] == val) {    
                while(nums[lastIndex] == val && lastIndex > i) {
                    lastIndex--;
+                   numElementsRemoved++;
                }
                numElementsRemoved++;
                nums[i] = nums[lastIndex];
