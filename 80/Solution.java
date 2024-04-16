@@ -5,15 +5,15 @@ public class Solution {
          return length;
       }
       
-      int i = 2;
-      for (int j = 2; j < length; j++) {
-         if (nums[j] != nums[i-1] || nums[j] != nums[i-2]) {
+      int i = 1;
+      for (int j = 1; j < length; j++) {
+         if (nums[j] != nums[i-1]) {
             i++;
             nums[i] = nums[j];
          }
       }
       
-      return i;
+      return i+1;
    }
 }
 
