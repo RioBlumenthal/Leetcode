@@ -12,3 +12,4 @@ class Solution(object):
             elif prices[i] - cheapest > maxProfit:
                 maxProfit = prices[i] - cheapest
         return maxProfit
+    
